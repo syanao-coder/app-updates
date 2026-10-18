@@ -4,7 +4,7 @@
   "versions": [
     {
       "version": "1.49.1",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-10-18",
       "notes": "- 不具合修正（利用者の実機報告「インストールしたところ、起動と同時に A JavaScript error occurred in the main process / Cannot find module '../scripts/app-update.cjs'」・本文 2.75）: 本体が読む更新の決めごとを `electron/` へ移した（組み立てたアプリに `scripts/` は入らない）。本体からたどれる読み込みが、すべて組み立てたアプリに入る場所にあるかを確かめる検査を足した（`check:update` AU23）。\n- v1.49.0 のインストール版は起動できないので、v1.49.1 は配布ページから手で入れ直す（v1.49.0 の更新の仕組みでは届かない）。\n- 操作説明: 文は変更なし（画面の変化なし）。版の表示が変わるので写真12枚を写し直した。\n- 3件のコミット（不具合1・操作説明1・文書と版数1）。\n- 機械検証: `check:update` 22 → **23**（AU23）、`check:ui` 394、ほか全件Pass・lint・build。組み立てたアプリと同じ場所だけ（dist・electron・vendor・package.json）を写した所で、本体の更新の部品が読み込めることを確かめた。\n- 版数4点同期の実施。",
       "file": {
@@ -13,7 +13,8 @@
         "size": 135439400,
         "sha512": "R0HqhlYHwnl+gtBdEU9lPG4zxgQmvywRv8xL03SH6bz/urjqtOk0v0oOPu7+L+ShlAeYljUcBFkStG2H65M6Gg=="
       },
-      "signature": "ooaWbGRDDwB6k3yqSwccXSA73F+ESqI4co/KYcDKZ417BICTcr1+wnpitjvPPjRtw7EN8SpDZogXxA4mt7IEAw=="
+      "signature": "ooaWbGRDDwB6k3yqSwccXSA73F+ESqI4co/KYcDKZ417BICTcr1+wnpitjvPPjRtw7EN8SpDZogXxA4mt7IEAw==",
+      "promotedAt": "2026-10-18T03:01:42.007Z"
     }
   ],
   "withdrawn": [
