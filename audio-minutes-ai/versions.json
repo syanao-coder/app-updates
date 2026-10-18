@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.50.0",
+      "channel": "beta",
+      "date": "2026-10-18",
+      "notes": "- 利用者要望と合意（本文 2.76）: ① 文字起こしの実行先に「Colab」を足した。NAS の司令塔を通して Colab の GPU で文字にする（このアプリのサーバーが取り次ぐ）。改善案 A（送る前に見込みを見せる）・B（司令塔の再起動のあと残った結果から受け取る）・C（届かないときは この PC で続けるかを尋ねる）・D（設定で使用時間と残りのユニットを見せる）を入れた。\n- 話者を区別するときは人数（1〜10人）が要る。「①〜③をまとめて実行」では「自動で推定」を選べず、「人数を入れる」を足した。\n- 2026-10-11 の「Colab は当面見送り」（Colab CLI＋WSL2 の形）は、司令塔を通す形で改めた（本文 2.76・3.5）。\n- 操作説明: 「Colab で文字起こし（NAS の司令塔）」の節と写真（`colab.jpg`）を足し、「外部AIとこの PC」の節と項目の説明（「?」）に Colab を書き足した。版の表示が変わるので写真12枚を写し直した。\n- 5件のコミット（取り次ぎ1・画面1・操作説明1・文書と版数1・住所の見出しが崩れていても落ちないようにする直し1）。\n- 機械検証: `check:colab` **19件**（新規）、`check:ui` 394 → **401**（CK1〜CK7）、ほか全件Pass・lint・build。自己署名の https の偽の司令塔とつないで、画面の操作を通しで確かめた。本物の司令塔・Colab での確認は未。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.50.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.50.0/audio-minutes-ai-setup-1.50.0.exe",
+        "size": 135503651,
+        "sha512": "2/CHbhIRlj8zN5mBJXQntCvsA4VA/6XFYBG1x0eGs49TXOpiHL+88FnqbkOlhKF9BM08SRTwAxHsylSXFVtQQw=="
+      },
+      "signature": "UbzFHxLgGzFp0YiGJ4fvKWZKWUhl5yjDXTVD93DuiKf5X7yEelBSV6NRfWz5q6acPEFFs51z+fmQTSF6KmlHBg=="
+    },
+    {
       "version": "1.49.1",
       "channel": "stable",
       "date": "2026-10-18",
