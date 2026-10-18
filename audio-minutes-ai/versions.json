@@ -14,19 +14,13 @@
         "sha512": "R0HqhlYHwnl+gtBdEU9lPG4zxgQmvywRv8xL03SH6bz/urjqtOk0v0oOPu7+L+ShlAeYljUcBFkStG2H65M6Gg=="
       },
       "signature": "ooaWbGRDDwB6k3yqSwccXSA73F+ESqI4co/KYcDKZ417BICTcr1+wnpitjvPPjRtw7EN8SpDZogXxA4mt7IEAw=="
-    },
+    }
+  ],
+  "withdrawn": [
     {
       "version": "1.49.0",
-      "channel": "beta",
-      "date": "2026-10-18",
-      "notes": "- 利用者要望と合意（本文 2.75）: アプリ本体を、アップデート用リポジトリ（`app-updates`・公開・アプリ名のフォルダ）から取って入れ替えられるようにした。起動のたびに裏で確かめ（d）、新しい版があれば更新内容つきで尋ね（a）、取ったら確認用の値と署名を確かめてから入れ替える（c）。前の版にも戻せる（b）。試験版の受け取りは設定でオンオフ。GitHub の機械でインストーラーを作って試験版として置く仕組みと、正式版に上げる仕組みを足した。ポータブル版は凍結（組み立てはインストーラーだけ）。\n- あわせて直した: 組み立てたアプリに electron-updater が入っておらず、以前の本体の更新はもともと動かなかった（本文 2.75 の失敗記録）。\n- 操作説明: 更新した（「アプリの更新」を足し、確認の画面の写真を足して、写真12枚を写し直した。exe 化の手順の文からポータブル版を外した）。\n- 5件のコミット（本体と受け渡し1・配る仕組み1・画面1・操作説明1・文書と版数1。検査はそれぞれに含む）。\n- 機械検証: 新しく `check:update`（21件。版の一覧・選び方・署名・取ったファイルの確かめ・偽の electron-updater での取得と入れ替え・偽の GitHub での配置と正式版への格上げ）、`check:ui` 391 → **394**（AP1〜AP3）、ほか全件Pass・lint・build・API費用なし。GitHub の機械での組み立て・実際の入れ替えは未（鍵の登録とアップデート用リポジトリの作成が要る）。\n- 版数4点同期の実施。",
-      "file": {
-        "name": "audio-minutes-ai-setup-1.49.0.exe",
-        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.49.0/audio-minutes-ai-setup-1.49.0.exe",
-        "size": 135435255,
-        "sha512": "UJ0mKZWg6O9dAg3AsmlbYk2bd/hBw6jxj2yLMKax4YpHs8rgEXyUei9i2f+9KHbX9FYgkcX/lTNXSOGzkSmKxw=="
-      },
-      "signature": "8KGo+VLayUFvGmFw+Eg7Vy3isL2dErzTIuA1NjH7py4uitx15Z/Sj9ppdeRmZYgX1S6vamP6PbskQJNoKnPXAw=="
+      "reason": "起動直後に落ちる（v1.49.1 で修正）",
+      "at": "2026-10-18T02:57:53.904Z"
     }
   ]
 }
