@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.52.0",
+      "channel": "beta",
+      "date": "2026-10-31",
+      "notes": "- 利用者要望と合意（本文 2.78）: モデルごとの単価をインターネットから自動で取る。まず API キーで Google の料金の一覧（Cloud Billing API）を読み、取れなかったモデルは外部AIに公式の料金ページを Google 検索させる（公式のページ以外の値・ありえない値は使わない）。起動時に1日1回までと「今すぐ単価を取り直す」。変わったら知らせる（改善案 B）。確かめずに使う（改善案 A は採らない）。手で直した単価は置き換えない。\n- 費用の目安・見込みをモデルごとの単価で数えるようにした。音声の入力は音声の単価で数える（入力のうち音声の分を記録する）。\n- 設定に「使った量の一覧（月ごと・モデルごと）」を足した（改善案 C）。\n- 操作説明: 節「設定: 費用の目安（モデルごとの単価）」と写真（`prices.jpg`）、節「設定: 使った量の一覧（月ごと・モデルごと）」と写真（`usage-summary.jpg`）を足し、モデルを試す節と項目の説明（「?」）を書き直した。版の表示が変わるので写真14枚を写し直した。\n- 4件のコミット（サーバー1・画面1・操作説明1・文書と版数1）。\n- 機械検証: `check:prices` **25件**（新規）、`check:ui` 410 → **425**（PB1〜PB15）、`check:colab` 19・`check:update` 24 ほか Pass・lint・build。`check:local-asr` 4.8 は不合格（v1.51.0 と同じ作業環境の ffmpeg のため。今回の変更とは関係しない）。偽のキーでサーバーの入口を呼び、料金の一覧に問い合わせて断りの種類を返すことを確かめた。本物のキーでの確認は未。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.52.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.52.0/audio-minutes-ai-setup-1.52.0.exe",
+        "size": 145467487,
+        "sha512": "be7wn4ITzbGi7kAhy/msDVM6UykeAmJ2t5NEqq4uixviboCGAqNSn2azObSX1plmkfm7lz7FCd9l6sIFtvhtbg=="
+      },
+      "signature": "Lcc5h0xbrBNeyN76qaGvF3cBBBhVOZFo/MKs4uqLuDzjrtTlW3ohkLKyAcvNlFiK1GqUyejor1RlGZ04HykWAQ=="
+    },
+    {
       "version": "1.51.0",
       "channel": "beta",
       "date": "2026-10-31",
