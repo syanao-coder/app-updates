@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.52.1",
+      "channel": "beta",
+      "date": "2026-10-31",
+      "notes": "- 不具合修正（利用者の実機報告「2 個のモデルのうち 0 個の単価を取りました…Google の料金の一覧を読めませんでした（CATALOG_HTTP_ERROR）。外部AIが検索をせずに答えたため、値を使いませんでした」・本文 2.78）:\n  - 計測: 料金の一覧が断ったとき、どの段で・HTTP の番号・Google の理由の種類を、検索のときは使ったモデル・終わり方・検索の跡の有無などを、動作ログと画面に残すようにした（原因を推測で直さないため）。\n  - 修正: Google の公式の料金ページを直接読む段を先頭に足した（キーもトークンも使わない）。日付で変わる単価は今日に当てはまる方を使う。料金の一覧と検索は、ページに無いモデルだけに使う。\n- 操作説明: 「設定: 費用の目安（モデルごとの単価）」の節の取り方を3段に書き直し、項目の説明（「?」）も直した。版の表示が変わるので写真16枚を写し直した。\n- 4件のコミット（計測1・修正1・操作説明1・文書と版数1）。\n- 機械検証: `check:prices` 25 → **36**（MP26〜MP36）、`check:ui` 425 ほか Pass・lint・build。`check:local-asr` 4.8 は作業環境のため不合格（罠118）。当環境で本物の公式の料金ページを読み、表どおりの単価になることを確かめた。利用者の PC での確認は未。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.52.1.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.52.1/audio-minutes-ai-setup-1.52.1.exe",
+        "size": 145471640,
+        "sha512": "QznXro3+r/8H0a+xDLwPraa6zgQbfVM2CWbNLWZoM3pmrtdumZLMztjpkFASItbQgdePqoxETAd8obAuJuahtw=="
+      },
+      "signature": "9eykcciG3/A6jry5XU2OcBdXTnWsvdPyexTbhEpY7BdrO0xeBui5/rSBjFU0eZE4UjVzbEWsiIqiSKLRVIo7BA=="
+    },
+    {
       "version": "1.52.0",
       "channel": "beta",
       "date": "2026-10-31",
