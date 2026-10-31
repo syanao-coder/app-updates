@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.51.0",
+      "channel": "beta",
+      "date": "2026-10-31",
+      "notes": "- 利用者要望と合意（本文 2.77）: ③の「音声と照合」と「資料と照合」を1つの「照合」の枠にまとめ、両方に印を付けると「音声と資料で照合」（1回の依頼で音声・資料・名簿を突き合わせる）。音声だけ・資料だけも選べる。音声と資料が食い違う事項は「音声どおり」「資料どおり」の両方の案を出して選ばせる（選ぶまで使わない）。音声の中に訂正の発言があれば、その訂正に合わせる。根拠の札と根拠でまとめて選ぶボタンを足した（改善案 A・B）。\n- 「①〜③をまとめて実行」の③に「音声と資料で照合する」を足し、既定にした。\n- 操作説明: ③の節を書き直し、節「③ 照合（音声と資料）」と写真（`check.jpg`）を足し、まとめて実行の節に照合の選択肢を書き足した。版の表示が変わるので写真13枚を写し直した。\n- 4件のコミット（サーバー1・画面1・操作説明1・文書と版数1）。\n- 機械検証: `check:ui` 401 → **410**（VB1〜VB9）、`check:colab` 19・`check:update` 24 ほか Pass・lint・build。`check:local-asr` 4.8 は不合格（この作業環境に入っている ffmpeg のため。`main` でも同じく不合格で、今回の変更とは関係しない・KNOWLEDGE_BASE に記録）。外部AIの返事を見本に差し替えて画面の操作を確かめた。本物の外部AIでの確認は未。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.51.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.51.0/audio-minutes-ai-setup-1.51.0.exe",
+        "size": 145308274,
+        "sha512": "05umhpF1ahI0WkcPA9/dCY4efCVw60tpyxseAK5A6bXr5wTO1+6HMxGNa0iDgbAEsn1fD6xhGF/yH2C2VxnwbA=="
+      },
+      "signature": "YicVhTC2QAelcYlGx0S+bD9DcAo9ntQrRZ6RuDizKN8h2Zy4QAKd/9lkgSX0DcQq0y4tk5yRGw2hK7Yj8VoxAg=="
+    },
+    {
       "version": "1.50.0",
       "channel": "beta",
       "date": "2026-10-18",
