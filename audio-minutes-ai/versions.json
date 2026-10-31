@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.53.0",
+      "channel": "beta",
+      "date": "2026-10-31",
+      "notes": "- 利用者要望と合意（本文 2.79）: 為替レート（1ドル＝何円）を欧州中央銀行の参考レートから自動で取る（単価と同時・1日1回まで・手入力の値は置き換えない・知らせは出さない）。\n- 3.5 の持ち越し（v1.49.0・利用者の発案）と合意（本文 2.79）: whisper の Vulkan 版の書庫（約19MB）をインストーラーから外し、AMD・Intel の GPU の PC が初めて使うときにアップデート用リポジトリの配布ページから取る（指紋を確かめる）。組み立てのたびにアプリの中身を大きい順に記録へ出す（改善案 A）。改善案 B（今のうちに取るボタン）は採らない。\n- 操作説明: 「設定: 費用の目安（モデルごとの単価）」の節に為替レートの段落を足し、「外部AIとこの PC」の節の Vulkan 版の文と項目の説明（「?」）を直した。版の表示が変わるので写真16枚を写し直した。\n- 5件のコミット（為替レート1・Vulkan 版1・中身の大きさの記録1・操作説明1・文書と版数1）。\n- 機械検証: `check:prices` 36 → **41**（FX1〜FX5）、`check:ui` 425 → **429**（PB16〜PB19）、`check:local-asr` 22.11〜22.13 を新設・22.9〜22.10 を直した、`check:update` 24 → **25**（AU25）、ほか Pass・lint・build。`check:local-asr` 4.8 は作業環境のため不合格（罠118）。当環境で本物の参考レートを読めた。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.53.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.53.0/audio-minutes-ai-setup-1.53.0.exe",
+        "size": 127408016,
+        "sha512": "mik6NxuCHso+B2o6gKlULzMuB8UPBlN+5n6hUyFqGoAABC6J2E0oNbjE+KG7h0yjRFh32ZPiNzTE3TWnfmElxg=="
+      },
+      "signature": "Tmi1UNBu3V7fEv3G3rCd7cIuhLBgnbIkAlD0XIyNukqALzHCsYR1DFcaokV3N/tgVAQsFi4ZkATyVKw5ReX8CQ=="
+    },
+    {
       "version": "1.52.1",
       "channel": "beta",
       "date": "2026-10-31",
