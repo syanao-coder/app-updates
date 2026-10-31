@@ -1,0 +1,8 @@
+version: 1.52.1
+files:
+  - url: 'https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.52.1/audio-minutes-ai-setup-1.52.1.exe'
+    sha512: QznXro3+r/8H0a+xDLwPraa6zgQbfVM2CWbNLWZoM3pmrtdumZLMztjpkFASItbQgdePqoxETAd8obAuJuahtw==
+    size: 145471640
+path: 'https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.52.1/audio-minutes-ai-setup-1.52.1.exe'
+sha512: QznXro3+r/8H0a+xDLwPraa6zgQbfVM2CWbNLWZoM3pmrtdumZLMztjpkFASItbQgdePqoxETAd8obAuJuahtw==
+releaseDate: '2026-10-31T06:29:16.340Z'
