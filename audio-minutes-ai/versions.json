@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.54.0",
+      "channel": "beta",
+      "date": "2026-10-31",
+      "notes": "- 利用者要望と合意（本文 2.80）: 「ローカル AI の測定」に日本語専用の文字起こしを足した。\n  - Haas-ja v1.0（名簿の名前を優先する方としない方・改善案 B）と ReazonSpeech v2（改善案 A）。\n  - speech.cpp（Windows は Vulkan 版・v0.10.0 に固定）で動き、道具とモデルは初めて使うときに自動で取る。\n  - 改善案 C（① への昇格）は、測った結果を見てから提案する。\n- 操作説明: 「ローカル AI の測定（実験）」の節に、日本語専用の文字起こしの段落を足した。版の表示が変わるので写真16枚を写し直した。\n- 3件のコミット（測定1・操作説明1・文書と版数1）。\n- 機械検証:\n  - `check:lab` 96 → **106**（HS1〜HS10・S1 を直した）、`check:ui`・`check:update`・`check:asr` ほか Pass・lint・build。\n  - `check:lab` の S6（切り出しを新しい3つだけ残す）が1回だけ不合格になり、続けて2回合格した。今回の変更とは関係しないが、原因は未確定なので別の作業にした。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。本物の speech.cpp とモデルでの確認は未。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.54.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.54.0/audio-minutes-ai-setup-1.54.0.exe",
+        "size": 127418825,
+        "sha512": "RJWjCvEyg6XkIHpZj9FH29V9u0M02rvkm73hi5R8Bwm1b7L4oh+kNAMcxBASW3xx112RdmdWIyc79UAhV+GH8g=="
+      },
+      "signature": "uKsMzOu/S4UutoPOMXM1ytt0uRK9vyB5B+YBMtLDvw0PQyAGo9+jcAzRQhxiLYR+wN0k7F2F4hmvahJVu9gGCA=="
+    },
+    {
       "version": "1.53.0",
       "channel": "beta",
       "date": "2026-10-31",
