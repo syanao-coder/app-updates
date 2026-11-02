@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.55.0",
+      "channel": "beta",
+      "date": "2026-11-02",
+      "notes": "- 利用者要望と合意（本文 2.81）: 文字起こしの前に、この PC の GPU でノイズを除けるようにした（NVIDIA RE-USE・speech.cpp v0.10.1）。\n  - 既定は使わない。この PC・外部AIの文字起こしで使える（Colab では使わない）。\n  - 測定で「あり・なし」を比べられる（改善案 A）。30秒の試し聞き（改善案 B）。話者の区別・③の音声照合にも使うかを選べる（改善案 C・既定は元の音声）。\n  - 「①〜③をまとめて実行」でも、この回だけ選べる。\n- speech.cpp を v0.10.0 → v0.10.1 に上げた（入っている版が違えば入れ直す）。\n- 操作説明: 節「① ノイズを除いてから文字起こし（任意）」と写真（`noise.jpg`）、項目の説明（「?」）を足した。写真を写すときは GPU の種類を NVIDIA として写す（写す PC に GPU が無くても欄が選べる姿で写すため）。版の表示が変わるので写真17枚を写し直した。\n- 5件のコミット（サーバー1・画面1・この PC のときの記録1・操作説明1・文書と版数1）。\n- 機械検証:\n  - `check:lab` 106 → **112**（HS11〜HS16）、`check:local-asr` 9.46〜9.48 を新設、`check:ui` 429 → **440**（NR1〜NR11・DZ6 の書き方を直した）、ほか Pass・lint・build。\n  - 当環境で `/api/audio-enhance` を本物の ffmpeg と偽の speech で通しで動かした。`check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n  - 本物の RE-USE・speech.cpp v0.10.1 での確認は未。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.55.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.55.0/audio-minutes-ai-setup-1.55.0.exe",
+        "size": 127469189,
+        "sha512": "6klp4YPYs4cuTrpEuF/bOjJHvndYaPsQtjxtibE/W7XSb7XieZXQlmNhjjGJZddTgNGaSY1J9mYCqm4ZDFyw6g=="
+      },
+      "signature": "aAO0O8WYeymKd7mQSllEQHb2YUahe6WlgOYoFtM1e+zfIcWAx6Mpp6J+Acwi++gUCN7kEbHNyGsjngVzExl3DQ=="
+    },
+    {
       "version": "1.54.0",
       "channel": "stable",
       "date": "2026-10-31",
