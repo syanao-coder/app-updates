@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.58.0",
+      "channel": "beta",
+      "date": "2026-11-07",
+      "notes": "- 利用者要望と合意（本文 2.84）: Colab で文字起こしする機能を隠し機能にした（既定は使わない）。設定の「アプリ・動作ログ」の「隠し機能」で使うようにする。\n  - 欄は、同じタブの一番下の「アプリの版」を5回続けて押すと出る（改善案 A）。使うようにすると「Colab の説明を開く」の案内（改善案 B）。切り替えを動作ログに残す（改善案 C）。\n  - 使わないときは、①の切り替え・設定の実行先・操作説明（節・用語・ほかの節の文）から Colab を隠す。①が Colab ならこの PC にする（住所・合言葉は残す）。\n  - 司令塔の住所が入っている PC は「使う」で始める。\n- 操作説明: Colab の節は隠し機能を使うときだけ出す。「ノイズを除いてから文字起こし」「外部AIとこの PC」の節と「?」の説明から Colab の文を除き、Colab の節に集めた。版の表示が変わるので写真を写し直した（Colab の写真は隠し機能を使う状態で写す）。\n- 4件のコミット（隠し機能1・操作説明1・検査1・文書と版数1）。\n- 機械検証:\n  - `check:ui` 460 → **467**（HF1〜HF7・OV2 の数を直した）、ほか Pass・lint・build。\n  - 当環境で、版の表示を5回押すと欄が出て、使うようにして保存すると案内が出て、操作説明に Colab の節が出ることを確かめた。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.58.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.58.0/audio-minutes-ai-setup-1.58.0.exe",
+        "size": 127403133,
+        "sha512": "gQtEhxTksvxX34YrDKORuXCsqsvJNmeJaK3vGg/WWBho6bhYpIvKvlcISg6J+nFF4nRFZAGrgZ+Erqp9yx2/SQ=="
+      },
+      "signature": "FmIKWdJ+6vaCdec+KMqD1X0Fu+FvWzmWzw7N5hPcsXH1gWd+fmWZ9ADBl9wkkf+rPKewE0S9OpEPCH3dQhhIBQ=="
+    },
+    {
       "version": "1.57.0",
       "channel": "beta",
       "date": "2026-11-07",
