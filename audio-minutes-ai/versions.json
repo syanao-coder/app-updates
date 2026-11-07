@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.56.0",
+      "channel": "beta",
+      "date": "2026-11-07",
+      "notes": "- 利用者要望と合意（本文 2.82）: 画面・操作説明・「?」の説明の言い回しを短くした（1文に1つのこと・細かい仕組みは「?」へ・画面に版の番号を出さない・「APIキー」にそろえる）。動きは変えていない。\n  - 操作説明に「動作環境（この PC で動かすとき）」（最低とおすすめを部品名で）と「Gemini の APIキーを用意する」（手順と公式ページへのリンク）を足した。\n  - 「はじめに」に3つの使い方の早見表（改善案 A）、設定の APIキーの欄に「キーの取り方」（改善案 B）、この PC の見立て（改善案 C・操作説明と設定）を足した。\n  - USB に置くときの「画面の大きさが違う PC では APIキーを入れ直す」という古い説明を消した（v1.18.0 から当てはまらない）。\n- 操作説明: 全節の文を短くした。節「動作環境（この PC で動かすとき）」「Gemini の APIキーを用意する」と写真（`api-key.jpg`）を足した。版の表示と文が変わるので写真18枚を写し直した。\n- 4件のコミット（操作説明1・この PC の見立て1・画面の言い回し1・文書と版数1）。\n- 機械検証:\n  - `check:ui` 440 → **451**（PF1〜PF11・DW4 と BI6 を新しい文に合わせた）、`check:local-asr` 18b.11・18b.13 を新しい文に合わせた、ほか Pass・lint・build。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n  - AMD・Intel の PC で GPU のメモリが読めるかは未。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.56.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.56.0/audio-minutes-ai-setup-1.56.0.exe",
+        "size": 127438715,
+        "sha512": "BXKGIxVt6CVE4PQCFAh/wzJBNDD827GadHoE8+tqlQI94IhlVEP96C0TL+D/NM37Dz2R4qQ0zBgHn5yj5MEU3g=="
+      },
+      "signature": "4RDBgdmDKDHjpP1bi24HlWoiJsPS2CvQDJkBgyR5+LrcUCNqdK1DTzmNdefBY5rQ5n4HuVcPDyflDBZO7tSyDw=="
+    },
+    {
       "version": "1.55.0",
       "channel": "beta",
       "date": "2026-11-02",
