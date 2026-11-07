@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.57.0",
+      "channel": "beta",
+      "date": "2026-11-07",
+      "notes": "- 利用者要望と合意（本文 2.83）: 操作説明を「できること → 要点の枠 → 番号の手順 → 注意・ヒントの枠 → 写真・表 → 詳細▼」のカードにした。専門用語は詳細▼と「ことばの説明」だけに書く。\n  - 「はじめての使い方」（改善案 A）と「ことばの説明」（改善案 B）の節を足した。「詳細をすべて開く／閉じる」（改善案 C）。左の一覧をまとまりごとにした。\n  - 「?」の説明を1文にし、詳しい説明は操作説明の詳細▼へ移した。\n  - 画面の灰色の長い説明を1行にし、残りは「詳細▼」で開くようにした（注意の帯は畳まない）。\n- 操作説明: 全節を書き直した（要点・手順・枠・詳細▼）。節「はじめての使い方」「ことばの説明」を足した。版の表示と画面の文が変わるので写真18枚を写し直した。\n- 4件のコミット（操作説明1・画面1・検査1・文書と版数1）。\n- 機械検証:\n  - `check:ui` 451 → **460**（MD1〜MD9・HP2／PF7／PF8／PF10 を新しい形に合わせた）、ほか Pass・lint・build。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.57.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.57.0/audio-minutes-ai-setup-1.57.0.exe",
+        "size": 127398651,
+        "sha512": "XlmQLA1iro7Tm0qflkVtugPDo3k3sqk+uI+kAvWcRiSNxJmsEtBL36HYVB8cVJfDS59ElTqXAXZdABQzG7gr/Q=="
+      },
+      "signature": "9ufOSUgiiA96tfsp81QSUdYJPHzgkYUM5UkJ3EOXdVBhwB5/Ifr3c/6nJe/5hRmCb1g0fZS1CI0wuXCi6xjqCg=="
+    },
+    {
       "version": "1.56.0",
       "channel": "beta",
       "date": "2026-11-07",
