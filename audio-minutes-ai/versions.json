@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.58.3",
+      "channel": "beta",
+      "date": "2026-11-08",
+      "notes": "- 修正: 左上の版の表示から更新履歴を開くと、操作できなくなる不具合",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.58.3.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.58.3/audio-minutes-ai-setup-1.58.3.exe",
+        "size": 127412595,
+        "sha512": "4FI4o8Ctndl29+5XRTkj7uJsH+jz8Xs7IaPyrI7gnOtNYLbTh1dW9Fk7w7e7XB3RftdLDEZEwdjjOucWVLpBcg=="
+      },
+      "signature": "OnBW7jA35ykLMUrs+TMhKaXLMS3ENZ9bRQ4lTng0bg3sH7xmCRw199TBJdmWTMPGejEZ1nNd6h2SW01eu05FCA=="
+    },
+    {
       "version": "1.58.2",
       "channel": "beta",
       "date": "2026-11-08",
