@@ -3,10 +3,23 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.58.2",
+      "channel": "beta",
+      "date": "2026-11-08",
+      "notes": "- 追加: 左上の版の表示を押すと、更新履歴を見られるようにした\n- 改善: 更新内容を短い書き方にした（これまでの版も書き直した）",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.58.2.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.58.2/audio-minutes-ai-setup-1.58.2.exe",
+        "size": 127412329,
+        "sha512": "Yg0rm4KzAIgBmYOVzYPiTYlfMP/jue+oTG3vIHYMuA260sq11Co7fd8AZFSGa8sFrVGBWV64VUCHxIOzL0KK+Q=="
+      },
+      "signature": "bCKd5yKj1QC1qp418v70hzdqY+L61yqssl9/KLfdR5SJGuEkQkc2eEJE8KdbA7awvD8DMNyEDRJOCgfIPy2WBQ=="
+    },
+    {
       "version": "1.58.1",
       "channel": "beta",
       "date": "2026-11-08",
-      "notes": "- 利用者依頼「セキュリティ的な脆弱性やPCに対する不具合を誘発するようなバグが無いか総点検」による修正（本文 2.85）。\n  - ローカルの AI（llama-server）を起動のたびの合言葉つきで動かす（ブラウザで開いた別のサイトから使われない）。\n  - zip の展開（Windows）で、場所を PowerShell の文に埋め込まない。\n  - 同時に2つ起動しない。番号 3000 の答えがこの起動のものかを名札で確かめる。\n  - 落ちた作業が残した一時ファイルを起動時に片付ける。崩れたファイル名の見出しで止まらない。\n  - 料金の一覧の APIキーを見出しで渡す。議事録の Word の見た目のリンクを確かめる。npm audit fix。\n  - xlsx（SheetJS）の更新は、配布サイトからの取得の許可を利用者に尋ねる（未対応）。\n- 操作説明: 手順・画面は変わらないので文は直していない（番号 3000 を別のプログラムが使っているときの説明の画面だけ足した）。版の表示が変わるので写真を写し直した。\n- 9件のコミット（修正6・部品の更新1・検査1・文書と版数1）。\n- 機械検証:\n  - `check:guard` 22 → **32**（SV1〜SV10）、`check:llm` 47 → **49**（AK1・AK2）、ほか Pass・lint・build。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n- 版数4点同期の実施。",
+      "notes": "- 修正: この PC の AI に合言葉を付け、ほかのサイトから使われないようにした\n- 修正: アプリが同時に2つ起動しないようにした\n- 修正: ほかのプログラムが番号 3000 を使っているとき、その画面を開かないようにした\n- 修正: 作業中に落ちたときの一時ファイルを、次の起動で片付けるようにした\n- 修正: 保存先の名前に「$」があると、部品を展開できない不具合\n- 修正: 様式見本の Word に入ったリンクの安全確認\n- 改善: 使っている部品の弱点を更新",
       "file": {
         "name": "audio-minutes-ai-setup-1.58.1.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.58.1/audio-minutes-ai-setup-1.58.1.exe",
@@ -19,7 +32,7 @@
       "version": "1.58.0",
       "channel": "beta",
       "date": "2026-11-07",
-      "notes": "- 利用者要望と合意（本文 2.84）: Colab で文字起こしする機能を隠し機能にした（既定は使わない）。設定の「アプリ・動作ログ」の「隠し機能」で使うようにする。\n  - 欄は、同じタブの一番下の「アプリの版」を5回続けて押すと出る（改善案 A）。使うようにすると「Colab の説明を開く」の案内（改善案 B）。切り替えを動作ログに残す（改善案 C）。\n  - 使わないときは、①の切り替え・設定の実行先・操作説明（節・用語・ほかの節の文）から Colab を隠す。①が Colab ならこの PC にする（住所・合言葉は残す）。\n  - 司令塔の住所が入っている PC は「使う」で始める。\n- 操作説明: Colab の節は隠し機能を使うときだけ出す。「ノイズを除いてから文字起こし」「外部AIとこの PC」の節と「?」の説明から Colab の文を除き、Colab の節に集めた。版の表示が変わるので写真を写し直した（Colab の写真は隠し機能を使う状態で写す）。\n- 4件のコミット（隠し機能1・操作説明1・検査1・文書と版数1）。\n- 機械検証:\n  - `check:ui` 460 → **467**（HF1〜HF7・OV2 の数を直した）、ほか Pass・lint・build。\n  - 当環境で、版の表示を5回押すと欄が出て、使うようにして保存すると案内が出て、操作説明に Colab の節が出ることを確かめた。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n- 版数4点同期の実施。",
+      "notes": "- 追加: Colab での文字起こしを隠し機能にした（設定の「隠し機能」で使う）",
       "file": {
         "name": "audio-minutes-ai-setup-1.58.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.58.0/audio-minutes-ai-setup-1.58.0.exe",
@@ -32,7 +45,7 @@
       "version": "1.57.0",
       "channel": "beta",
       "date": "2026-11-07",
-      "notes": "- 利用者要望と合意（本文 2.83）: 操作説明を「できること → 要点の枠 → 番号の手順 → 注意・ヒントの枠 → 写真・表 → 詳細▼」のカードにした。専門用語は詳細▼と「ことばの説明」だけに書く。\n  - 「はじめての使い方」（改善案 A）と「ことばの説明」（改善案 B）の節を足した。「詳細をすべて開く／閉じる」（改善案 C）。左の一覧をまとまりごとにした。\n  - 「?」の説明を1文にし、詳しい説明は操作説明の詳細▼へ移した。\n  - 画面の灰色の長い説明を1行にし、残りは「詳細▼」で開くようにした（注意の帯は畳まない）。\n- 操作説明: 全節を書き直した（要点・手順・枠・詳細▼）。節「はじめての使い方」「ことばの説明」を足した。版の表示と画面の文が変わるので写真18枚を写し直した。\n- 4件のコミット（操作説明1・画面1・検査1・文書と版数1）。\n- 機械検証:\n  - `check:ui` 451 → **460**（MD1〜MD9・HP2／PF7／PF8／PF10 を新しい形に合わせた）、ほか Pass・lint・build。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n- 版数4点同期の実施。",
+      "notes": "- 改善: 操作説明を「要点＋詳細▼」の形に作り直した\n- 追加: 操作説明に「はじめての使い方」「ことばの説明」の節\n- 改善: 画面の長い説明を1行にし、残りは「詳細」で開くようにした",
       "file": {
         "name": "audio-minutes-ai-setup-1.57.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.57.0/audio-minutes-ai-setup-1.57.0.exe",
@@ -45,7 +58,7 @@
       "version": "1.56.0",
       "channel": "beta",
       "date": "2026-11-07",
-      "notes": "- 利用者要望と合意（本文 2.82）: 画面・操作説明・「?」の説明の言い回しを短くした（1文に1つのこと・細かい仕組みは「?」へ・画面に版の番号を出さない・「APIキー」にそろえる）。動きは変えていない。\n  - 操作説明に「動作環境（この PC で動かすとき）」（最低とおすすめを部品名で）と「Gemini の APIキーを用意する」（手順と公式ページへのリンク）を足した。\n  - 「はじめに」に3つの使い方の早見表（改善案 A）、設定の APIキーの欄に「キーの取り方」（改善案 B）、この PC の見立て（改善案 C・操作説明と設定）を足した。\n  - USB に置くときの「画面の大きさが違う PC では APIキーを入れ直す」という古い説明を消した（v1.18.0 から当てはまらない）。\n- 操作説明: 全節の文を短くした。節「動作環境（この PC で動かすとき）」「Gemini の APIキーを用意する」と写真（`api-key.jpg`）を足した。版の表示と文が変わるので写真18枚を写し直した。\n- 4件のコミット（操作説明1・この PC の見立て1・画面の言い回し1・文書と版数1）。\n- 機械検証:\n  - `check:ui` 440 → **451**（PF1〜PF11・DW4 と BI6 を新しい文に合わせた）、`check:local-asr` 18b.11・18b.13 を新しい文に合わせた、ほか Pass・lint・build。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n  - AMD・Intel の PC で GPU のメモリが読めるかは未。\n- 版数4点同期の実施。",
+      "notes": "- 改善: 画面と操作説明の言い回しを短くした\n- 追加: 操作説明に「動作環境」「Gemini の APIキーを用意する」の節\n- 追加: この PC でどこまでできるかの見立て（操作説明と設定）\n- 追加: 設定の APIキーの欄に「キーの取り方」",
       "file": {
         "name": "audio-minutes-ai-setup-1.56.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.56.0/audio-minutes-ai-setup-1.56.0.exe",
@@ -58,7 +71,7 @@
       "version": "1.55.0",
       "channel": "beta",
       "date": "2026-11-02",
-      "notes": "- 利用者要望と合意（本文 2.81）: 文字起こしの前に、この PC の GPU でノイズを除けるようにした（NVIDIA RE-USE・speech.cpp v0.10.1）。\n  - 既定は使わない。この PC・外部AIの文字起こしで使える（Colab では使わない）。\n  - 測定で「あり・なし」を比べられる（改善案 A）。30秒の試し聞き（改善案 B）。話者の区別・③の音声照合にも使うかを選べる（改善案 C・既定は元の音声）。\n  - 「①〜③をまとめて実行」でも、この回だけ選べる。\n- speech.cpp を v0.10.0 → v0.10.1 に上げた（入っている版が違えば入れ直す）。\n- 操作説明: 節「① ノイズを除いてから文字起こし（任意）」と写真（`noise.jpg`）、項目の説明（「?」）を足した。写真を写すときは GPU の種類を NVIDIA として写す（写す PC に GPU が無くても欄が選べる姿で写すため）。版の表示が変わるので写真17枚を写し直した。\n- 5件のコミット（サーバー1・画面1・この PC のときの記録1・操作説明1・文書と版数1）。\n- 機械検証:\n  - `check:lab` 106 → **112**（HS11〜HS16）、`check:local-asr` 9.46〜9.48 を新設、`check:ui` 429 → **440**（NR1〜NR11・DZ6 の書き方を直した）、ほか Pass・lint・build。\n  - 当環境で `/api/audio-enhance` を本物の ffmpeg と偽の speech で通しで動かした。`check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n  - 本物の RE-USE・speech.cpp v0.10.1 での確認は未。\n- 版数4点同期の実施。",
+      "notes": "- 追加: 文字起こしの前にノイズを除く機能（グラフィックボードのある PC・30秒の試し聞きつき）",
       "file": {
         "name": "audio-minutes-ai-setup-1.55.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.55.0/audio-minutes-ai-setup-1.55.0.exe",
@@ -71,7 +84,7 @@
       "version": "1.54.0",
       "channel": "stable",
       "date": "2026-10-31",
-      "notes": "- 利用者要望と合意（本文 2.80）: 「ローカル AI の測定」に日本語専用の文字起こしを足した。\n  - Haas-ja v1.0（名簿の名前を優先する方としない方・改善案 B）と ReazonSpeech v2（改善案 A）。\n  - speech.cpp（Windows は Vulkan 版・v0.10.0 に固定）で動き、道具とモデルは初めて使うときに自動で取る。\n  - 改善案 C（① への昇格）は、測った結果を見てから提案する。\n- 操作説明: 「ローカル AI の測定（実験）」の節に、日本語専用の文字起こしの段落を足した。版の表示が変わるので写真16枚を写し直した。\n- 3件のコミット（測定1・操作説明1・文書と版数1）。\n- 機械検証:\n  - `check:lab` 96 → **106**（HS1〜HS10・S1 を直した）、`check:ui`・`check:update`・`check:asr` ほか Pass・lint・build。\n  - `check:lab` の S6（切り出しを新しい3つだけ残す）が1回だけ不合格になり、続けて2回合格した。今回の変更とは関係しないが、原因は未確定なので別の作業にした。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。本物の speech.cpp とモデルでの確認は未。\n- 版数4点同期の実施。",
+      "notes": "- 追加: 「ローカル AI の測定」に日本語専用の文字起こし（Haas-ja・ReazonSpeech）",
       "file": {
         "name": "audio-minutes-ai-setup-1.54.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.54.0/audio-minutes-ai-setup-1.54.0.exe",
@@ -85,7 +98,7 @@
       "version": "1.53.0",
       "channel": "beta",
       "date": "2026-10-31",
-      "notes": "- 利用者要望と合意（本文 2.79）: 為替レート（1ドル＝何円）を欧州中央銀行の参考レートから自動で取る（単価と同時・1日1回まで・手入力の値は置き換えない・知らせは出さない）。\n- 3.5 の持ち越し（v1.49.0・利用者の発案）と合意（本文 2.79）: whisper の Vulkan 版の書庫（約19MB）をインストーラーから外し、AMD・Intel の GPU の PC が初めて使うときにアップデート用リポジトリの配布ページから取る（指紋を確かめる）。組み立てのたびにアプリの中身を大きい順に記録へ出す（改善案 A）。改善案 B（今のうちに取るボタン）は採らない。\n- 操作説明: 「設定: 費用の目安（モデルごとの単価）」の節に為替レートの段落を足し、「外部AIとこの PC」の節の Vulkan 版の文と項目の説明（「?」）を直した。版の表示が変わるので写真16枚を写し直した。\n- 5件のコミット（為替レート1・Vulkan 版1・中身の大きさの記録1・操作説明1・文書と版数1）。\n- 機械検証: `check:prices` 36 → **41**（FX1〜FX5）、`check:ui` 425 → **429**（PB16〜PB19）、`check:local-asr` 22.11〜22.13 を新設・22.9〜22.10 を直した、`check:update` 24 → **25**（AU25）、ほか Pass・lint・build。`check:local-asr` 4.8 は作業環境のため不合格（罠118）。当環境で本物の参考レートを読めた。\n- 版数4点同期の実施。",
+      "notes": "- 追加: 為替レートの自動取得\n- 改善: インストーラーを小さくした（AMD・Intel 向けの部品は使うときに取る）",
       "file": {
         "name": "audio-minutes-ai-setup-1.53.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.53.0/audio-minutes-ai-setup-1.53.0.exe",
@@ -98,7 +111,7 @@
       "version": "1.52.1",
       "channel": "beta",
       "date": "2026-10-31",
-      "notes": "- 不具合修正（利用者の実機報告「2 個のモデルのうち 0 個の単価を取りました…Google の料金の一覧を読めませんでした（CATALOG_HTTP_ERROR）。外部AIが検索をせずに答えたため、値を使いませんでした」・本文 2.78）:\n  - 計測: 料金の一覧が断ったとき、どの段で・HTTP の番号・Google の理由の種類を、検索のときは使ったモデル・終わり方・検索の跡の有無などを、動作ログと画面に残すようにした（原因を推測で直さないため）。\n  - 修正: Google の公式の料金ページを直接読む段を先頭に足した（キーもトークンも使わない）。日付で変わる単価は今日に当てはまる方を使う。料金の一覧と検索は、ページに無いモデルだけに使う。\n- 操作説明: 「設定: 費用の目安（モデルごとの単価）」の節の取り方を3段に書き直し、項目の説明（「?」）も直した。版の表示が変わるので写真16枚を写し直した。\n- 4件のコミット（計測1・修正1・操作説明1・文書と版数1）。\n- 機械検証: `check:prices` 25 → **36**（MP26〜MP36）、`check:ui` 425 ほか Pass・lint・build。`check:local-asr` 4.8 は作業環境のため不合格（罠118）。当環境で本物の公式の料金ページを読み、表どおりの単価になることを確かめた。利用者の PC での確認は未。\n- 版数4点同期の実施。",
+      "notes": "- 修正: AI の種類ごとの単価が取れない不具合（Google の料金ページから直接取るようにした）",
       "file": {
         "name": "audio-minutes-ai-setup-1.52.1.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.52.1/audio-minutes-ai-setup-1.52.1.exe",
@@ -111,7 +124,7 @@
       "version": "1.52.0",
       "channel": "beta",
       "date": "2026-10-31",
-      "notes": "- 利用者要望と合意（本文 2.78）: モデルごとの単価をインターネットから自動で取る。まず API キーで Google の料金の一覧（Cloud Billing API）を読み、取れなかったモデルは外部AIに公式の料金ページを Google 検索させる（公式のページ以外の値・ありえない値は使わない）。起動時に1日1回までと「今すぐ単価を取り直す」。変わったら知らせる（改善案 B）。確かめずに使う（改善案 A は採らない）。手で直した単価は置き換えない。\n- 費用の目安・見込みをモデルごとの単価で数えるようにした。音声の入力は音声の単価で数える（入力のうち音声の分を記録する）。\n- 設定に「使った量の一覧（月ごと・モデルごと）」を足した（改善案 C）。\n- 操作説明: 節「設定: 費用の目安（モデルごとの単価）」と写真（`prices.jpg`）、節「設定: 使った量の一覧（月ごと・モデルごと）」と写真（`usage-summary.jpg`）を足し、モデルを試す節と項目の説明（「?」）を書き直した。版の表示が変わるので写真14枚を写し直した。\n- 4件のコミット（サーバー1・画面1・操作説明1・文書と版数1）。\n- 機械検証: `check:prices` **25件**（新規）、`check:ui` 410 → **425**（PB1〜PB15）、`check:colab` 19・`check:update` 24 ほか Pass・lint・build。`check:local-asr` 4.8 は不合格（v1.51.0 と同じ作業環境の ffmpeg のため。今回の変更とは関係しない）。偽のキーでサーバーの入口を呼び、料金の一覧に問い合わせて断りの種類を返すことを確かめた。本物のキーでの確認は未。\n- 版数4点同期の実施。",
+      "notes": "- 追加: AI の種類ごとの単価の自動取得\n- 追加: 使った量の一覧（月ごと・AI の種類ごと）\n- 改善: 費用の目安を AI の種類ごとの単価で数えるようにした",
       "file": {
         "name": "audio-minutes-ai-setup-1.52.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.52.0/audio-minutes-ai-setup-1.52.0.exe",
@@ -124,7 +137,7 @@
       "version": "1.51.0",
       "channel": "beta",
       "date": "2026-10-31",
-      "notes": "- 利用者要望と合意（本文 2.77）: ③の「音声と照合」と「資料と照合」を1つの「照合」の枠にまとめ、両方に印を付けると「音声と資料で照合」（1回の依頼で音声・資料・名簿を突き合わせる）。音声だけ・資料だけも選べる。音声と資料が食い違う事項は「音声どおり」「資料どおり」の両方の案を出して選ばせる（選ぶまで使わない）。音声の中に訂正の発言があれば、その訂正に合わせる。根拠の札と根拠でまとめて選ぶボタンを足した（改善案 A・B）。\n- 「①〜③をまとめて実行」の③に「音声と資料で照合する」を足し、既定にした。\n- 操作説明: ③の節を書き直し、節「③ 照合（音声と資料）」と写真（`check.jpg`）を足し、まとめて実行の節に照合の選択肢を書き足した。版の表示が変わるので写真13枚を写し直した。\n- 4件のコミット（サーバー1・画面1・操作説明1・文書と版数1）。\n- 機械検証: `check:ui` 401 → **410**（VB1〜VB9）、`check:colab` 19・`check:update` 24 ほか Pass・lint・build。`check:local-asr` 4.8 は不合格（この作業環境に入っている ffmpeg のため。`main` でも同じく不合格で、今回の変更とは関係しない・KNOWLEDGE_BASE に記録）。外部AIの返事を見本に差し替えて画面の操作を確かめた。本物の外部AIでの確認は未。\n- 版数4点同期の実施。",
+      "notes": "- 改善: ③の「音声と照合」と「資料と照合」を1つにまとめた\n- 追加: 音声と資料が食い違うとき、「音声どおり」「資料どおり」から選べるようにした",
       "file": {
         "name": "audio-minutes-ai-setup-1.51.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.51.0/audio-minutes-ai-setup-1.51.0.exe",
@@ -137,7 +150,7 @@
       "version": "1.50.0",
       "channel": "beta",
       "date": "2026-10-18",
-      "notes": "- 利用者要望と合意（本文 2.76）: ① 文字起こしの実行先に「Colab」を足した。NAS の司令塔を通して Colab の GPU で文字にする（このアプリのサーバーが取り次ぐ）。改善案 A（送る前に見込みを見せる）・B（司令塔の再起動のあと残った結果から受け取る）・C（届かないときは この PC で続けるかを尋ねる）・D（設定で使用時間と残りのユニットを見せる）を入れた。\n- 話者を区別するときは人数（1〜10人）が要る。「①〜③をまとめて実行」では「自動で推定」を選べず、「人数を入れる」を足した。\n- 2026-10-11 の「Colab は当面見送り」（Colab CLI＋WSL2 の形）は、司令塔を通す形で改めた（本文 2.76・3.5）。\n- 操作説明: 「Colab で文字起こし（NAS の司令塔）」の節と写真（`colab.jpg`）を足し、「外部AIとこの PC」の節と項目の説明（「?」）に Colab を書き足した。版の表示が変わるので写真12枚を写し直した。\n- 5件のコミット（取り次ぎ1・画面1・操作説明1・文書と版数1・住所の見出しが崩れていても落ちないようにする直し1）。\n- 機械検証: `check:colab` **19件**（新規）、`check:ui` 394 → **401**（CK1〜CK7）、ほか全件Pass・lint・build。自己署名の https の偽の司令塔とつないで、画面の操作を通しで確かめた。本物の司令塔・Colab での確認は未。\n- 版数4点同期の実施。",
+      "notes": "- 追加: Colab（NAS の司令塔）で文字起こしできるようにした",
       "file": {
         "name": "audio-minutes-ai-setup-1.50.0.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.50.0/audio-minutes-ai-setup-1.50.0.exe",
@@ -150,7 +163,7 @@
       "version": "1.49.1",
       "channel": "stable",
       "date": "2026-10-18",
-      "notes": "- 不具合修正（利用者の実機報告「インストールしたところ、起動と同時に A JavaScript error occurred in the main process / Cannot find module '../scripts/app-update.cjs'」・本文 2.75）: 本体が読む更新の決めごとを `electron/` へ移した（組み立てたアプリに `scripts/` は入らない）。本体からたどれる読み込みが、すべて組み立てたアプリに入る場所にあるかを確かめる検査を足した（`check:update` AU23）。\n- v1.49.0 のインストール版は起動できないので、v1.49.1 は配布ページから手で入れ直す（v1.49.0 の更新の仕組みでは届かない）。\n- 操作説明: 文は変更なし（画面の変化なし）。版の表示が変わるので写真12枚を写し直した。\n- 3件のコミット（不具合1・操作説明1・文書と版数1）。\n- 機械検証: `check:update` 22 → **23**（AU23）、`check:ui` 394、ほか全件Pass・lint・build。組み立てたアプリと同じ場所だけ（dist・electron・vendor・package.json）を写した所で、本体の更新の部品が読み込めることを確かめた。\n- 版数4点同期の実施。",
+      "notes": "- 修正: インストール版が起動直後に止まる不具合",
       "file": {
         "name": "audio-minutes-ai-setup-1.49.1.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.49.1/audio-minutes-ai-setup-1.49.1.exe",
