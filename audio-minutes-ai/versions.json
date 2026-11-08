@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.59.0",
+      "channel": "beta",
+      "date": "2026-11-08",
+      "notes": "- 改善: 設定の「この PC の AI」に、この PC で使う設定をいつもまとめて出すようにした\n- 改善: 「ローカル AI の測定」を、会議の「…」から設定の「この PC の AI」へ移した\n- 改善: 設定のタブの名前を分かりやすくした（部品の置き場所と更新・保存の仕方）\n- 改善: ② 議事録の「見る」を、見出し・箇条書き・表の形で出すようにした\n- 改善: ② 議事録の上の帯を2段にし、③ の題が折り返さないようにした\n- 改善: ボタンが押せないときに、その理由を横に出すようにした\n- 追加: 文字の大きさ（標準・大きめ・特大）を選べるようにした\n- 追加: 設定の中を検索できるようにした\n- 追加: 初めて起動したときの案内を追加した\n- 修正: 設定のタブを切り替えると、前のタブで送った位置のまま途中から出ていた",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.59.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.59.0/audio-minutes-ai-setup-1.59.0.exe",
+        "size": 127413957,
+        "sha512": "tBQCY59h3xml3n/x1oxfi4g1w/sYQGrT3nWwgIxwuM/hNij+QbtJvST7jUMAUQMOwTt/NOTOk2DbVaaKoZPhSw=="
+      },
+      "signature": "vvPQ4keSx867wzlDS+ffk3Whc/nRn9e6m/+vItQZkK4Abar1723e3GmDkPIpq/zRCnlwJL7yJ0YXZ6JLdjOqBQ=="
+    },
+    {
       "version": "1.58.3",
       "channel": "beta",
       "date": "2026-11-08",
