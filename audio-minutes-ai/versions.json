@@ -4,7 +4,7 @@
   "versions": [
     {
       "version": "1.59.1",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-08",
       "notes": "- 修正: Excel を読み取る部品を、弱点を直した新しい版に更新した",
       "file": {
@@ -13,7 +13,8 @@
         "size": 127421571,
         "sha512": "1QFkjIRNOWm/Q86obRn/EhsBRxld1FVC7AJCvIUbTf2rC56WhCcRnll+UkoxAcTDEu4TXB0R7nQTQj4mMbaPlg=="
       },
-      "signature": "t1kRqZecGjXwgIQy9+VvJJ2i7nV5ssUGxJpw7Q+4PWfSAQ2TXEdYZqfTV7KRviuEZQBUJ2JvpV0CMW7MIjLoAA=="
+      "signature": "t1kRqZecGjXwgIQy9+VvJJ2i7nV5ssUGxJpw7Q+4PWfSAQ2TXEdYZqfTV7KRviuEZQBUJ2JvpV0CMW7MIjLoAA==",
+      "promotedAt": "2026-11-08T02:24:43.048Z"
     },
     {
       "version": "1.59.0",
