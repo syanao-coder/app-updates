@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.58.1",
+      "channel": "beta",
+      "date": "2026-11-08",
+      "notes": "- 利用者依頼「セキュリティ的な脆弱性やPCに対する不具合を誘発するようなバグが無いか総点検」による修正（本文 2.85）。\n  - ローカルの AI（llama-server）を起動のたびの合言葉つきで動かす（ブラウザで開いた別のサイトから使われない）。\n  - zip の展開（Windows）で、場所を PowerShell の文に埋め込まない。\n  - 同時に2つ起動しない。番号 3000 の答えがこの起動のものかを名札で確かめる。\n  - 落ちた作業が残した一時ファイルを起動時に片付ける。崩れたファイル名の見出しで止まらない。\n  - 料金の一覧の APIキーを見出しで渡す。議事録の Word の見た目のリンクを確かめる。npm audit fix。\n  - xlsx（SheetJS）の更新は、配布サイトからの取得の許可を利用者に尋ねる（未対応）。\n- 操作説明: 手順・画面は変わらないので文は直していない（番号 3000 を別のプログラムが使っているときの説明の画面だけ足した）。版の表示が変わるので写真を写し直した。\n- 9件のコミット（修正6・部品の更新1・検査1・文書と版数1）。\n- 機械検証:\n  - `check:guard` 22 → **32**（SV1〜SV10）、`check:llm` 47 → **49**（AK1・AK2）、ほか Pass・lint・build。\n  - `check:local-asr` 4.8 は作業環境のため不合格（罠118）。\n- 版数4点同期の実施。",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.58.1.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.58.1/audio-minutes-ai-setup-1.58.1.exe",
+        "size": 127409713,
+        "sha512": "BG8nl5be538iWN4FijZFmeaW00tu+MxnKfwWY0JVP88L1V4Iy1vlxwDmA5TCeOOEbLKlTSmHEtBbXtBIMHfOEQ=="
+      },
+      "signature": "2gF1ILPqDG7K76SBcmZpF6TRCCzhQh8+hX64JpNh9iTueUH0st7GQOnSXNFG7JgbYpCnJlycV7I2PBSbJsKRAg=="
+    },
+    {
       "version": "1.58.0",
       "channel": "beta",
       "date": "2026-11-07",
