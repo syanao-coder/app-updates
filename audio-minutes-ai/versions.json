@@ -4,7 +4,7 @@
   "versions": [
     {
       "version": "1.60.0",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-25",
       "notes": "- 改善: 操作説明を画面の右側に開き、アプリを操作しながら読めるようにした\n- 追加: 操作説明を別の窓で開けるようにした\n- 追加: 手順の「画面のどこ？」で、押すボタンを光らせるようにした\n- 改善: 操作説明を、最後に読んでいた節から開くようにした\n- 修正: 操作説明の「② 議事録」の要点で、ボタンの名前が古いままだった",
       "file": {
@@ -13,7 +13,8 @@
         "size": 127779548,
         "sha512": "rR6BcQuPMtgZWvmoddo0IXRYNUOX80k8jgJPUZGokNf0jqw/+MkqbKVbSlJ8Cz0XyOO6hvOJTu8ubL23hgF/Fg=="
       },
-      "signature": "XayzvFUcFaT7MiMPB/KDD7XyFkpuduYYKcQJ9kPQMusfxifPu030kZGtOY4YevsByMU3qQP3Bwr3R74G+fAdDw=="
+      "signature": "XayzvFUcFaT7MiMPB/KDD7XyFkpuduYYKcQJ9kPQMusfxifPu030kZGtOY4YevsByMU3qQP3Bwr3R74G+fAdDw==",
+      "promotedAt": "2026-11-25T07:46:22.182Z"
     },
     {
       "version": "1.59.1",
