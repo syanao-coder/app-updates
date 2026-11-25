@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.60.1",
+      "channel": "beta",
+      "date": "2026-11-25",
+      "notes": "- 修正: 設定などを開くと、右側の操作説明が隠れていた（操作説明とアプリの画面が重ならないようにした）\n- 改善: 操作説明の「大きく表示」を、帯を「広げる」に変えた\n- 修正: 操作説明の写真を大きく見ると、アプリの画面が隠れていた\n- 修正: 新しい版を配った直後に「今すぐ確かめる」を押しても、見つからないことがあった",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.60.1.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.60.1/audio-minutes-ai-setup-1.60.1.exe",
+        "size": 127780027,
+        "sha512": "cY0WsDCsRd5OV/RIY91976Ld76CvAViH9J/e0GPmAaH8Elz0DrAiHhJg6azwENsa59C8DWAD/d0fJ7AMvQmieg=="
+      },
+      "signature": "s/2CEG/G9OAM+EEw6iDlJIxsWhv5asRHR7B2BdbBFzPoyQNCCbSEz8xLtbZ+UGj4vzNRaX3FT4gljSP5kw58CA=="
+    },
+    {
       "version": "1.60.0",
       "channel": "stable",
       "date": "2026-11-25",
