@@ -3,10 +3,23 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.60.2",
+      "channel": "beta",
+      "date": "2026-11-27",
+      "notes": "- 修正: 新しい版を配った直後に「今すぐ確かめる」を押しても、数分のあいだ見つからなかった",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.60.2.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.60.2/audio-minutes-ai-setup-1.60.2.exe",
+        "size": 127781576,
+        "sha512": "GteWaw4zwRoc7DCouQF3vReeumb45/4+FMn36Y6Nc8jPctAvlOqGGX7oJtneg4+ozUr1WtcJlcNzDS/a+soa6Q=="
+      },
+      "signature": "Mi0tBXYGtx6H1xkmndqghiGob6/6QfWG3jr0XgiMbRagUO4dREk+5+Dyp0pjLv7kXkPXfrQkRIwx+m6+3m9zCw=="
+    },
+    {
       "version": "1.60.1",
       "channel": "stable",
       "date": "2026-11-25",
-      "notes": "- 修正: 設定などを開くと、右側の操作説明が隠れていた（操作説明とアプリの画面が重ならないようにした）\n- 改善: 操作説明の「大きく表示」を、帯を「広げる」に変えた\n- 修正: 操作説明の写真を大きく見ると、アプリの画面が隠れていた\n- 修正: 新しい版を配った直後に「今すぐ確かめる」を押しても、見つからないことがあった",
+      "notes": "- 修正: 設定などを開くと、右側の操作説明が隠れていた（操作説明とアプリの画面が重ならないようにした）\n- 改善: 操作説明の「大きく表示」を、帯を「広げる」に変えた\n- 修正: 操作説明の写真を大きく見ると、アプリの画面が隠れていた\n- 修正: 新しい版を配った直後に「今すぐ確かめる」を押しても見つからないことがあった（この版の直し方は効かず、v1.60.2 で直した）",
       "file": {
         "name": "audio-minutes-ai-setup-1.60.1.exe",
         "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.60.1/audio-minutes-ai-setup-1.60.1.exe",
