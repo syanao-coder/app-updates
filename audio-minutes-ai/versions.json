@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.61.0",
+      "channel": "beta",
+      "date": "2026-11-28",
+      "notes": "- 追加: ローカル AI の測定で、DeNA の会話向けの文字起こしモデル（Haas-ja・Parakeet-ja）を比べられるようにした\n- 追加: ローカル AI の測定で、Parakeet-ja も比べられるようにした\n- 改善: 取ってきたモデルが本物かを、指紋で確かめるようにした",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.61.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.61.0/audio-minutes-ai-setup-1.61.0.exe",
+        "size": 127787585,
+        "sha512": "OlTHVBPeEFD9ljs3wyMrJtDBe/5Y7piPZAw/fmEj8PahL24fR8wrh7ZOrCdqz/W8lKV28JL0wq5SjuqFeY7AhA=="
+      },
+      "signature": "tPF+2RIyuLJmfuoLVyVt2wTkRijgcXzfpbq7BFiJlbMHkmq0tySSCg07VitEFml7Kd0XF9saN9JftxpWRPnkBg=="
+    },
+    {
       "version": "1.60.2",
       "channel": "stable",
       "date": "2026-11-27",
