@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.62.0",
+      "channel": "beta",
+      "date": "2026-11-28",
+      "notes": "- 改善: ローカル AI の測定は、設定の「測る会議」のプルダウンで会議を選んで開くようにした（前に測った会議を覚える）\n- 改善: ローカル AI の測定の方式を種類ごとの枠に分け、名前・大きさ・説明を並べた。よく比べる組み合わせをまとめて選べるようにした\n- 改善: 設定に「議事録の作り方」のタブを足し、いつも使う指示と様式見本をまとめた\n- 改善: 設定の言葉と出し方を見直した（この PC に合う議事録のモデルに「おすすめ」・文字起こしの準備の状態・ファイル名の例・APIキーが無いときは費用の欄を畳む）\n- 改善: ③ に議事録が無いときに、できることと「② 議事録へ」のボタンを出すようにした。① の見出しを ② と同じ2段にした\n- 修正: ② の空の案内のボタンの名前が古いままだった",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.62.0.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.62.0/audio-minutes-ai-setup-1.62.0.exe",
+        "size": 127769222,
+        "sha512": "/OBbiTx2n77xwNPcBwxO98Uy/mQVteYgYETUG9+wZy4dP9Ae4UZwy6NXtxFrBUc6533uR4CkuBv6NVp1xZ5SMA=="
+      },
+      "signature": "GYUxSOlXYG5/YJYZOaASSM7TgiwpukzpFTfjF849Comn+gZqAClCvuRl4z96epBR/h/OuQ7WlZrS91lQo3tXBg=="
+    },
+    {
       "version": "1.61.1",
       "channel": "stable",
       "date": "2026-11-28",
