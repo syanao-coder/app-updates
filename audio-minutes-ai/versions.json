@@ -3,6 +3,19 @@
   "format": 1,
   "versions": [
     {
+      "version": "1.61.1",
+      "channel": "beta",
+      "date": "2026-11-28",
+      "notes": "- 修正: 起動した直後、会議を開いているのに「ローカル AI の測定を開く」が押せないことがあった",
+      "file": {
+        "name": "audio-minutes-ai-setup-1.61.1.exe",
+        "url": "https://github.com/syanao-coder/app-updates/releases/download/audio-minutes-ai-v1.61.1/audio-minutes-ai-setup-1.61.1.exe",
+        "size": 127787441,
+        "sha512": "nau58IMarIcIaY0F1BcBL2EVRjgktb2hF3/mtf7nsXOekPY9ORP9YiBfrHTC1Fjb8LT9gNYFY7wjv7jNGQrCPQ=="
+      },
+      "signature": "nI/fYHldOxCznhZunAWt2ID/2SMmb5xw/vYZaJrltaHKb/1QcnT3XfzM2wU107sHFJCbnDpTPd9A2+EUZ1YaAA=="
+    },
+    {
       "version": "1.61.0",
       "channel": "beta",
       "date": "2026-11-28",
