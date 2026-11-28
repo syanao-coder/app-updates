@@ -4,7 +4,7 @@
   "versions": [
     {
       "version": "1.60.2",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-27",
       "notes": "- 修正: 新しい版を配った直後に「今すぐ確かめる」を押しても、数分のあいだ見つからなかった",
       "file": {
@@ -13,7 +13,8 @@
         "size": 127781576,
         "sha512": "GteWaw4zwRoc7DCouQF3vReeumb45/4+FMn36Y6Nc8jPctAvlOqGGX7oJtneg4+ozUr1WtcJlcNzDS/a+soa6Q=="
       },
-      "signature": "Mi0tBXYGtx6H1xkmndqghiGob6/6QfWG3jr0XgiMbRagUO4dREk+5+Dyp0pjLv7kXkPXfrQkRIwx+m6+3m9zCw=="
+      "signature": "Mi0tBXYGtx6H1xkmndqghiGob6/6QfWG3jr0XgiMbRagUO4dREk+5+Dyp0pjLv7kXkPXfrQkRIwx+m6+3m9zCw==",
+      "promotedAt": "2026-11-28T00:51:51.184Z"
     },
     {
       "version": "1.60.1",
