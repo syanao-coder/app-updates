@@ -4,7 +4,7 @@
   "versions": [
     {
       "version": "1.61.1",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-28",
       "notes": "- 修正: 起動した直後、会議を開いているのに「ローカル AI の測定を開く」が押せないことがあった",
       "file": {
@@ -13,7 +13,8 @@
         "size": 127787441,
         "sha512": "nau58IMarIcIaY0F1BcBL2EVRjgktb2hF3/mtf7nsXOekPY9ORP9YiBfrHTC1Fjb8LT9gNYFY7wjv7jNGQrCPQ=="
       },
-      "signature": "nI/fYHldOxCznhZunAWt2ID/2SMmb5xw/vYZaJrltaHKb/1QcnT3XfzM2wU107sHFJCbnDpTPd9A2+EUZ1YaAA=="
+      "signature": "nI/fYHldOxCznhZunAWt2ID/2SMmb5xw/vYZaJrltaHKb/1QcnT3XfzM2wU107sHFJCbnDpTPd9A2+EUZ1YaAA==",
+      "promotedAt": "2026-11-28T01:39:20.096Z"
     },
     {
       "version": "1.61.0",
